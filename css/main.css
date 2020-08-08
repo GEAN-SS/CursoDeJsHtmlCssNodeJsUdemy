@@ -1,0 +1,16 @@
+/*NOTAS DE LA CLASE*/
+/* # para el id es usado para elementos que van a ser inicos
+ y la idea es usarlo en uno o muy pocos casos */
+
+/* . para seleccionar las clases son usadas para englobar estilo
+ de muchas etiquetas como de grupos*/
+
+ body{
+   background-color: #efefef;
+ }
+ #parrafo{
+   color: #ff0000;
+ }
+.etiqueta{
+  color: #00aa00;
+}
