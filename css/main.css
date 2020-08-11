@@ -1,22 +1,35 @@
-/*NOTAS DE LA CLASE*/
-/* # para el id es usado para elementos que van a ser inicos
- y la idea es usarlo en uno o muy pocos casos */
-
-/* . para seleccionar las clases son usadas para englobar estilo
- de muchas etiquetas como de grupos*/
-
-/* borde*/
-/*border: [color del borde]+[ancho del borde]+[ estilo del borde]
-se puede colocar o espesificar lados por separado como border-left*/
-/*border-radius:  indica el redondes de los bordes de la caja*/
-
-
- body{
-   background-color: #eee;
- }
-.caja{
-  margin: 8px;
+/* EJERCICIO #1: PRIMER EJERCICIO DE CSS*/
+/*Mi intento del ejercicio #1 de css*/
+body{
+  background-color: #eee;
+}
+.tarjeta{
+  background-color: #fff;
+  margin-left: 8px;
+  border-bottom: #E3E3E3 8px solid;
+  border-right:  #E3E3E3 8px solid;
+}
+.seccion{
+  padding: 10px;
+}
+.cabecera{
+  border-bottom: #DBDBDB 2px solid;
+}
+.cuerpo{
+  border-bottom: #DBDBDB 2px solid;
+}
+.pie{
+  padding: 10px;
+}
+.aceptar{
+  background-color: #6299FF;
+  color: #fff;
+  border: #6299FF;
   padding: 8px;
-  border: black 8px solid;
-  background-color: #aaf;
+}
+.cancelar{
+  background-color: #8C8D8F;
+  color: #fff;
+  border: #8C8D8F;
+  padding: 8px;
 }
