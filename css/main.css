@@ -5,12 +5,18 @@
 /* . para seleccionar las clases son usadas para englobar estilo
  de muchas etiquetas como de grupos*/
 
+/* borde*/
+/*border: [color del borde]+[ancho del borde]+[ estilo del borde]
+se puede colocar o espesificar lados por separado como border-left*/
+/*border-radius:  indica el redondes de los bordes de la caja*/
+
+
  body{
-   background-color: #efefef;
+   background-color: #eee;
  }
- #parrafo{
-   color: #ff0000;
- }
-.etiqueta{
-  color: #00aa00;
+.caja{
+  margin: 8px;
+  padding: 8px;
+  border: black 8px solid;
+  background-color: #aaf;
 }
