@@ -1,35 +1,42 @@
 /* EJERCICIO #1: PRIMER EJERCICIO DE CSS*/
-/*Mi intento del ejercicio #1 de css*/
-body{
+/*Solicion del ejercicio #1 de css*/
+body {
   background-color: #eee;
+  /*Es el fondo */
 }
-.tarjeta{
+.caja {
   background-color: #fff;
-  margin-left: 8px;
-  border-bottom: #E3E3E3 8px solid;
-  border-right:  #E3E3E3 8px solid;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 2px;
+  border-top: solid 0px;
 }
-.seccion{
+
+.contenido {
   padding: 10px;
 }
-.cabecera{
-  border-bottom: #DBDBDB 2px solid;
-}
-.cuerpo{
-  border-bottom: #DBDBDB 2px solid;
-}
-.pie{
+
+.header {
   padding: 10px;
+  border-bottom: solid 1px #eee;
 }
-.aceptar{
-  background-color: #6299FF;
-  color: #fff;
-  border: #6299FF;
-  padding: 8px;
+
+.footer {
+  padding: 10px;
+  border-top: solid 1px #eee;
 }
-.cancelar{
-  background-color: #8C8D8F;
+
+.primario {
+  background-color: #0090FF;
+  padding: 5px;
+  border: 0px;
   color: #fff;
-  border: #8C8D8F;
-  padding: 8px;
+}
+
+.secundario {
+  background-color: #aaa;
+  padding: 5px;
+  border: 0px;
+  color: #fff;
 }
