@@ -1,53 +1,35 @@
-/*ESTE TEMA ES DE COMO MODIFICAR LOS TEXTOS COLORES, ESTILOS, TAMAÑO
-Y ALINEACIONES*/
-
-/*tEXT -ALIGN DA EL ESPACIADO Y LUGAR DEL PARRAFO
-  PUDE ESTAR ALINEADO , PARA LA DERECHA O CON ESPACIO JUSTIFICADO*/
-
-/*TEXT-DECORATION ES UNA PROPIEDAD QUE SE USA MAS QUE TODO EN LA ETIQUETA A
-Y SE ENCARGA DE COMO QUIERES QUE SE VEA LA LINEA QUE SALE EN ESTE
-COMO POR EJEMPLO ARRIBA DEL TEXTO, EN MEDIO (TACHANDOLO), ABAJO O NINGUNO*/
-
-/*TEXT-TRANSFORM ES UN ELEMENTO SE ENCARGA DE QUE EL TEXTO ESTE EN MAYUSCULAS
-MINUSCULAS O QUE SIEMPRE MUESTRE LA PRIMERA LETRA EN MAYUSCULAS*/
-
+/*Estamos en la seccion 9 y vemos los tipos de links*/
 body{
   background-color: #eee;
 }
-p{
-  font-family: "Times New Roman";
-  /*tipo de tipografia*/
-  font-style: oblique;
-  /*el estilo que tama como por ejemplo la cursiva*/
-  font-size: 1.5em;
-  /*el tamaño de la fuente
-   puede ir en pixeles o en em */
-   font-weight: 100;/*va de 100 en 100 desde 100 a 900*/
-   /*Es el ancho de la letra */
-  color: #222fff;
-  text-align: left;
-  text-indent: 30px;
-   /*Esto solo se aplica para la primera linea de un parrafo
-   y es bacicamente una sangria inicial*/
-   line-height: 1.5;
-   /*es el espacio entre lineas de un texto*/
-   word-spacing: 10px;
-   /*Es el espacio entre palabras*/
-   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-   /*Esto es un sombreado en el texto la primera propiedad es su desplazameinto
-   hacia la derecha, el segundo es cuanto se despalaza hacia abajo, tercero que tan
-   difuminado esta la sombra y por ultimo es el color de la sombra*/
-
+a{ /*en caso de no haber definido alguno de los elementos posteriores el
+  link se vera rosado*/
+  color: hotpink;
+  background-color: #f00;
+  border: solid 1px #d00;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 4px;
 }
-
-
-/*Zona de borrado de la seccion*/
-/*
-borrado en la seccion 8 clase 32 tipos de fuentes
-a{
+a:link{ /*es el color del link, es lo mismo que el anterior solo que aqui
+  somos especificos de que este es el color del link normal*/
+  color: pink;
+  text-decoration: none;
+  /*el texto del link no tendra la linea de abajo*/
+}
+a:visited{/*este color se pondra cuando el link fue visitado anteriormente*/
+  color: white;
+}
+a:hover{/*este color saldra cuando coloques el cursor sobre el link*/
+  color: gray;
   text-decoration: underline;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  //es el espacio de letras en cada palabra
+  /*si pasamos el cursor sobre el link, nos mostrara una linea inferior*/
+  background-color: #f55;
+  /*el fondo se aclara cuando pasamos sobre el, este es un buen truco para
+  haerlo pasar por un boton*/
 }
-*/
+a:active{/*este es el color que pondra cuando le des click al link*/
+  color: black;
+  background-color: blue;
+  /*este fondo azul saldra cuando le demos click al link*/
+}
