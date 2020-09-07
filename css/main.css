@@ -1,35 +1,16 @@
-/*Estamos en la seccion 9 y vemos los tipos de links*/
+/*Estamos en la seccion 9 y vemos listas*/
 body{
   background-color: #eee;
 }
-a{ /*en caso de no haber definido alguno de los elementos posteriores el
-  link se vera rosado*/
-  color: hotpink;
-  background-color: #f00;
-  border: solid 1px #d00;
-  padding: 10px;
-  margin: 15px;
+ul{/*es el la etiqueta de lista desordenada*/
+  list-style-type: none;/*esto define los estilos que tiene el indicador
+  de la lista el cual puede ser ciculos, cuadrados, numeros romanos o ninguno*/
+  background-color: #fff;
+  border: solid 1px #ddd;
   border-radius: 4px;
+  padding-left: 0px;
 }
-a:link{ /*es el color del link, es lo mismo que el anterior solo que aqui
-  somos especificos de que este es el color del link normal*/
-  color: pink;
-  text-decoration: none;
-  /*el texto del link no tendra la linea de abajo*/
-}
-a:visited{/*este color se pondra cuando el link fue visitado anteriormente*/
-  color: white;
-}
-a:hover{/*este color saldra cuando coloques el cursor sobre el link*/
-  color: gray;
-  text-decoration: underline;
-  /*si pasamos el cursor sobre el link, nos mostrara una linea inferior*/
-  background-color: #f55;
-  /*el fondo se aclara cuando pasamos sobre el, este es un buen truco para
-  haerlo pasar por un boton*/
-}
-a:active{/*este es el color que pondra cuando le des click al link*/
-  color: black;
-  background-color: blue;
-  /*este fondo azul saldra cuando le demos click al link*/
+li{/*esto es la etiqueta de los elementos de la lista*/
+  border-bottom: solid 1px #ddd;
+  padding: 15px;
 }
