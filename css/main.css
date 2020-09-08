@@ -1,25 +1,10 @@
-/*Estamos en la seccion 9 y vemos tablas*/
+/*Estamos en la seccion 10 y vemos Display*/
 body{
   background-color: #eee;
 }
-table{
-  width: 100%;
-  background-color: white;
-  border-collapse: collapse;
-}
-tr:nth-child(even){
-  background-color: #f2f2f2;
-}
-td{
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-table th{
-  background-color: #4caf50 ;
-  color:white;
-  text-align: left;
-  padding-left: 8px;
-  padding-right: 8px; 
-  padding-top: 12px;
-  padding-bottom: 12px;
+#invisible{
+  display: none;
+  /*Display lo que hace es cambiar el estado de como se comporta un
+  elemnto o etiqueta siendo inline que no tiene un espacio o block que
+  ocupa el espacio completo, he incluso el none que lo vuelve invisible*/
 }
