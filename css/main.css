@@ -1,19 +1,20 @@
-/*Estamos en la seccion 10 y overflow*/
+/*Estamos en la seccion 10 y float, selectores y opacidad*/
 body{
   background-color: #eee;
 }
-#over{
-  width: 200px;
-  height: 200px;
-  overflow: scroll; /*Overflow es basicamente lo que pasa cuando un texto/ imagen / dato
-  es mas grande que el espacio que ya le asignamos y por ende se ve feo
+img{
+  float: right;
+  /*Es la posicion que tiene el elemento, todo lo que este despues de el lo
+  rodeara o se pondra de lado, como lo hace el texto de un parrafo*/
+}
+img:hover{
+  opacity: 0.8;
+  /*es la opacidad de un elemento, va del 0-1 y pasa entre 0.1 hasta 0.9 y sus variantes como 0.45  */
+}
+div p /*aqui colocamos primero la etiqueta madre que es la que almacena
+a la que queremos modificar, luego la que queremos modificar.
+de esta manera no cambiamos el color de los parrafos que esten fuera del
+div*/{
 
-  hay varias alternativas o comportamientos:
-
-  hidden: todo lo que no este en el area no se ve.
-  visible: es el estado por defecto, donde se ve todo asi este fuera del limite.
-  scroll: crea una barra y esconde lo que esta en el limite, pero puedes bajar a
-  verlo. este puede ser espesificado como x para el ancho e Y para el alto.
-
-  */
+  color: #f00;
 }
