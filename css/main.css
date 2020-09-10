@@ -1,54 +1,19 @@
-/*Estamos en la seccion 10 y vemos max-width y position (relative y fixed)*/
+/*Estamos en la seccion 10 y overflow*/
 body{
   background-color: #eee;
 }
-.rlt{
-  max-width: 350px;
-   // esto nos indica el maximo ancho que puede tener, pero no lo minimo
-  que puede ocupar. o sea, puede ser mas pequeño, pero no mas grande de lo
-  que le indicamos */
-  background-color: #f00;
-  margin: auto;
-  /*con esto podemos mantener un contenido centrado en la pantalla siemrpe y
-  cuando sea un display block*/
+#over{
+  width: 200px;
+  height: 200px;
+  overflow: scroll; /*Overflow es basicamente lo que pasa cuando un texto/ imagen / dato
+  es mas grande que el espacio que ya le asignamos y por ende se ve feo
 
-  
-  /*position:
+  hay varias alternativas o comportamientos:
 
-  1)relative; // esto significa que el elemneto va a tener una nueva
-  posicion, pero respecto a donde se encuentra ahora mismo
+  hidden: todo lo que no este en el area no se ve.
+  visible: es el estado por defecto, donde se ve todo asi este fuera del limite.
+  scroll: crea una barra y esconde lo que esta en el limite, pero puedes bajar a
+  verlo. este puede ser espesificado como x para el ancho e Y para el alto.
+
   */
-  position: relative;
-
-
-  left:15px;   /*dirige el elemento hacia la izquierda segun los px
-  espesificados, tanto positiva como negativamente*/
-
-  right:15px;  /*dirige el elemento hacia la derecha segun los px
-  espesificados, tanto positiva como negativamente*/
-
-  top:15px;    /*dirige el elemento hacia arriba segun los px
-  espesificados, tanto positiva como negativamente*/
-
-  button:15px; /*dirige el elemento hacia abajo segun los px
-  espesificados, tanto positiva como negativamente*/
-
-  /*al todos ir con la misma cantidad se queda en el mismo lugar*/
-}
-
-/**position:
-
-  2)fixed; // esto deja un elemnto fijo en la pantalla, ayuda como una barra de
-  menu superior que no se quite o como menu desplegable.*/
-.fxd{
-  max-width: 350px;
-  background-color: red;
-  color: white;
-  margin: auto;
-  position: fixed;
-    left:0px;
-    right: 300px;
-    top:0px;
-    button:100px;
-
 }
