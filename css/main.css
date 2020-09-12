@@ -1,20 +1,34 @@
-/*Estamos en la seccion 10 y float, selectores y opacidad*/
+/*Estamos en la seccion 11 y como construir una barra de navegación*/
 body{
   background-color: #eee;
 }
-img{
-  float: right;
-  /*Es la posicion que tiene el elemento, todo lo que este despues de el lo
-  rodeara o se pondra de lado, como lo hace el texto de un parrafo*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
 }
-img:hover{
-  opacity: 0.8;
-  /*es la opacidad de un elemento, va del 0-1 y pasa entre 0.1 hasta 0.9 y sus variantes como 0.45  */
+li{
+  float: left;
 }
-div p /*aqui colocamos primero la etiqueta madre que es la que almacena
-a la que queremos modificar, luego la que queremos modificar.
-de esta manera no cambiamos el color de los parrafos que esten fuera del
-div*/{
-
-  color: #f00;
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+li:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.active{
+  background-color: #4caf50;
+}
+.content{
+  margin-top: 55px;
 }
