@@ -2,14 +2,12 @@
 body{
   background-color: #eee;
 }
-.fondo{
-  /* formato normal donde los colores no se repiten */
-  /* background-image: linear-gradient(to left ,white, #ccc); */
-  /* background-image: linear-gradient(direcion,color1,color2); */
-  /* tambien podemos agregar mas colores y usar le formato rgba e indicar transparencia */
-  /* tambien puedes en la direccion no decir arriba, abajo, izquierda o derecha. tambien pudes usar angolos como -15deg sin el "to" antes */
-  /* si no indicamos la direccion a donde se va a degradar, lo toma por defecto de arriba hacia abajo */
-
-  /* formato donde podemos repetir el degrade */
-  background-image: repeating-linear-gradient(0deg,rgba(255,0,0,1) 10%, tomato 20% );
+.box{
+  box-shadow: 2px, 2px, 4px, rgba(0,0,0,0.3);
+    /* box-shadow: direccion en X, direccion en Y, difuminado, color; */
+}
+.text{
+  color: white;
+  text-shadow: 0px, 1px, 2px, rgba(0,0,0,0.3);
+  /* es el mismo formato que box-shadow */
 }
