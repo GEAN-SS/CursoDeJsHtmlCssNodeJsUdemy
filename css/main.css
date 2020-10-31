@@ -1,23 +1,6 @@
-/*Estamos en la seccion 12 y background*/
+/*Estamos en la seccion 12 y colores a detalle y opacidad*/
 body{
   background-color: #eee;
 }
-.fondo{
-  height: 500px;
-  /*
-  background-color: green;
-  background-image: url(http://placekitten.com/200/300);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-
-  --> este no entra en la declaracion, se tiene que llamar por separado
-  background-size: cover; */
-
-  /* se puede colocar en una sola linea (deben mantener el mismo orden
-  aunque no debemos mencionarlos todos) */
-  background: green url(http://placekitten.com/200/200) no-repeat
-  left top fixed;
-  background-size: cover;
-
-}
+/* en esto vemos los colores y como manejar las capas de opacidad, no me siento
+con ganas de aprender tanto de colores de momento */
