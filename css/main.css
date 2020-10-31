@@ -1,6 +1,15 @@
-/*Estamos en la seccion 12 y colores a detalle y opacidad*/
+/*Estamos en la seccion 12 y sombras*/
 body{
   background-color: #eee;
 }
-/* en esto vemos los colores y como manejar las capas de opacidad, no me siento
-con ganas de aprender tanto de colores de momento */
+.fondo{
+  /* formato normal donde los colores no se repiten */
+  /* background-image: linear-gradient(to left ,white, #ccc); */
+  /* background-image: linear-gradient(direcion,color1,color2); */
+  /* tambien podemos agregar mas colores y usar le formato rgba e indicar transparencia */
+  /* tambien puedes en la direccion no decir arriba, abajo, izquierda o derecha. tambien pudes usar angolos como -15deg sin el "to" antes */
+  /* si no indicamos la direccion a donde se va a degradar, lo toma por defecto de arriba hacia abajo */
+
+  /* formato donde podemos repetir el degrade */
+  background-image: repeating-linear-gradient(0deg,rgba(255,0,0,1) 10%, tomato 20% );
+}
