@@ -1,13 +1,16 @@
-/*Estamos en la seccion 12 y sombras*/
+/*Estamos en la seccion 12 y transformaciones en 2 y 3 dimenciones*/
+
+/* TODO: el tema es que el contenido es demaciado denso, pero muy interesante de ver
+ */
 body{
   background-color: #eee;
 }
 .box{
-  box-shadow: 2px, 2px, 4px, rgba(0,0,0,0.3);
-    /* box-shadow: direccion en X, direccion en Y, difuminado, color; */
-}
-.text{
-  color: white;
-  text-shadow: 0px, 1px, 2px, rgba(0,0,0,0.3);
-  /* es el mismo formato que box-shadow */
+  position: relative;
+  width: 100px;
+  top: 50px;
+  left: 50px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 1px, 2px,2px, rgba(0, 0, 0, 0.2);
 }
