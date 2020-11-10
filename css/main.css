@@ -1,16 +1,12 @@
-/*Estamos en la seccion 13 y CSS GRID(columnas y filas)*/
+/*Estamos en la seccion 13 y CSS GRID(minimo y maximo)*/
 body {
   background-color: #eee;
 }
 .grid{
   display: grid;
-   grid-template-rows: 50px 100px;
-   /* esto define la separacion de
-  las filas hasta la tercera y las demas tienen el espacio pre-definido
-  en grid */
-  grid-template-columns: 2rem 2% 3fr 100px;
-  /* esta define la separacion de las columnas que puede ser en px(pixeles) fr(que en este caso son
-  las fracciones) rem ( que es lo mismo que em que es basado en la raíz) o % (el porcentaje de la pantalla)*/
+   grid-template-rows: minmax(100px, auto);
+   /*minmax(valor minimo que puede alcanzar, maximo valor que puede alcanzar)*/
+  grid-template-columns:minmax(auto,50%) 1fr 3em;
 
 }
 .element{
