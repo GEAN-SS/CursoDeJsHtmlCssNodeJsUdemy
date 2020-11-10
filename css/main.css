@@ -1,4 +1,4 @@
-/*Estamos en la seccion 13 y CSS GRID(Repetir dimensiones)*/
+/*Estamos en la seccion 13 y CSS GRID(Brechas entre elementos)*/
 body {
   background-color: #eee;
 }
@@ -6,9 +6,13 @@ body {
   display: grid;
   grid-template-rows: repeat(2,50%);
   grid-template-columns:30px repeat(3,1fr) 15px;
-/* el elemento repeat te pide declarar dos elementos. uno es las veces que
-se va a repetir lo dicho en el segundo elemento y el segundo elemento indica
-el tamaño de cada fila o columna segun donde lo indiques*/
+  grid-gap: 20px 10px;
+  /* aqui se define la separacion entre filas y columnas (en ese orden) en columnas
+  en una sola linea de codigo */
+  /* NOTA: si defines un solo tamaño esto se aplica igual a filas y columnas */
+  /* grid-row-gap: 20px;
+  grid-column-gap: 10px; */
+  /* gap basicamente es la separacion entre las filas o columnas */
 }
 .element{
   background-color: red;
