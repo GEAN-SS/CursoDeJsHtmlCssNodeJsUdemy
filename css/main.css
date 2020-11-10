@@ -1,13 +1,14 @@
-/*Estamos en la seccion 13 y CSS GRID(minimo y maximo)*/
+/*Estamos en la seccion 13 y CSS GRID(Repetir dimensiones)*/
 body {
   background-color: #eee;
 }
 .grid{
   display: grid;
-   grid-template-rows: minmax(100px, auto);
-   /*minmax(valor minimo que puede alcanzar, maximo valor que puede alcanzar)*/
-  grid-template-columns:minmax(auto,50%) 1fr 3em;
-
+  grid-template-rows: repeat(2,50%);
+  grid-template-columns:30px repeat(3,1fr) 15px;
+/* el elemento repeat te pide declarar dos elementos. uno es las veces que
+se va a repetir lo dicho en el segundo elemento y el segundo elemento indica
+el tamaño de cada fila o columna segun donde lo indiques*/
 }
 .element{
   background-color: red;
