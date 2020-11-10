@@ -1,103 +1,11 @@
-/*Estamos en la seccion 12 y planteamiento de problema (solucion)*/
+/*Estamos en la seccion 13 y CSS GRID(Introduccion)*/
 body {
   background-color: #eee;
 }
-.box{
-  background-color: white;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  margin: 10px 15px;
-  width: 200px;
-  padding: 10px 15px;
-  text-align: center;
-  transition: 0.3s;
+.grid{
+  display: grid; /* asi hacemos uso de la distribucion tipo grid,
+  lo activamos */
 }
-.red{
-  border-left: solid 2px red;
+.element{
+  background-color: red;
 }
-.red:hover{
-  transform: scale(1.05,1.05);
-}
-
-.green{
-  border-left: solid 2px green;
-}
-.green:hover{
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.blue{
-  border-left: solid 2px blue;
-}
-.blue:hover{
-background-color: #eef;
-}
-
-/*
-  ESTE ES MI INTENTO DEL PROBLEMA
-Boton rojo que aumenta el tamaño al estar sobre el
-.boxR {
-  width: 250px;
-  height: 50px;
-  margin-top: 50px;
-  margin-left: 50px;
-  border-style: solid;
-  border-style: hidden;
-  border-left: 3px solid red;
-  box-shadow: 5px 5px 15px rgb(60, 83, 74);
-  transition: 0.5s;
-}
-
-.boxR>p {
-  text-align: center;
-  font-size: 30px;
-}
-
-.boxR:hover {
-  transform: scale(1.05, 1.05);
-}
-
-Boton verde que crece su sombra al estar sobre el
-.boxG {
-  width: 250px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left: 50px;
-  border-style: solid;
-  border-style: hidden;
-  border-left: 3px solid green;
-  box-shadow: 5px 5px 15px rgb(60, 83, 74);
-  transition: 0.5s;
-}
-
-.boxG>p {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.boxG:hover {
-  box-shadow: 5px 5px 30px rgb(60, 83, 74);
-}
-
-Boton azul que cambia de color cuando estamos sobre el
-.boxB {
-  width: 250px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left: 50px;
-  border-style: solid;
-  border-style: hidden;
-  border-left: 3px solid blue;
-  box-shadow: 5px 5px 15px rgb(60, 83, 74);
-  transition: 0.8s;
-}
-
-.boxB>p {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.boxB:hover {
-  background-color: rgba(39, 122, 163, 0.5);
-} */
