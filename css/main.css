@@ -10,7 +10,7 @@ body {
   /* asignar nombres a las medidas de las filas y las columas ayuda a como le asignamos nombres a las
   variables para asi poder usarlas de una manera mas facil sabiendo de como se llaman poder usarlas
   mas intuitivamenten */
-  grid-gap: 15px;
+  grid-gap: 15px; 
 }
 
 .element {
