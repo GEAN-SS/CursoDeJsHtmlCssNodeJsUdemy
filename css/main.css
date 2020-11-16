@@ -1,4 +1,4 @@
-/*Estamos en la seccion 13 y CSS GRID(expandir elementos entre grillas)*/
+/*Estamos en la seccion 13 y CSS GRID(asignar nombres a las lineas de grilla)*/
 body {
   background-color: #eee;
 }
@@ -15,19 +15,6 @@ body {
 }
 
 .header {
-  /*esto se tiene que hacer en una clase aparte para evitar poblemas
-  y no desordenar el codigo.
-  basicamente le indicamos donde comienza o donde termina una
-  fila o columna.
-
- grid-column-start:1; la columna comienza en la primera
-  grid-column-end: 6; hasta la sexta
-
-  grid-row-start: 1; la fila comienza en la primera de todas las filas
-  grid-row-end: 3; y termina en la tercera
-
-  el sistemas es bastante simple la verdad
-*/
-  grid-column: 1/6; /* esta es una manera simple de definir lo que cubriran  */
-  grid-row: 1/3;    /* las filas y las columnas de 4 a simplemente 2 lienas de codigo */
+  grid-column: 1/6;
+  grid-row: 1/3;
 }
