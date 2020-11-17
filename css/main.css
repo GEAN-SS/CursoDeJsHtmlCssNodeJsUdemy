@@ -1,16 +1,16 @@
-/*Estamos en la seccion 13 y CSS GRID(asignar nombres a las lineas de grilla)*/
+/*Estamos en la seccion 13 y CSS GRID(usando repeat para nombres de lineas predecibles)*/
 body {
   background-color: #eee;
 }
 
 .grid {
   display: grid;
-  grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-final];
-  grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-final];
-  /* asignar nombres a las medidas de las filas y las columas ayuda a como le asignamos nombres a las
-  variables para asi poder usarlas de una manera mas facil sabiendo de como se llaman poder usarlas
-  mas intuitivamenten */
-  grid-gap: 15px; 
+  grid-template-rows: repeat(2,[row-inicio] 50px [row-final]);
+  grid-template-columns: repeat(3,[col-inicio] 1fr [col-final]);
+  /* con el repeat tu colocas el numearo de veces que se repite el nombre
+  que colocas al lado como lo es en este caso "[row-inicio] 50px" que se repetira 2 veces
+  y en el caso de "[col-inicio] 1fr" que se repetira 3 veces*/
+  grid-gap: 15px;
 }
 
 .element {
@@ -18,8 +18,8 @@ body {
 }
 
 .header {
-  grid-column: col-1-inicio / col-4-final;
-  grid-row: row-1-inicio / row-3-final;
-  /* ahora marcamos de una manera mas facil el inicio y fin de las filas y columnas sin tener que
-  usar fragciones o numeros y asi al momento de cambiarlas simplementa buscamos el nombre */
+  grid-column: col-inicio / col-final 3;
+  grid-row: row-inicio / row-final 3;
+/* en esta nueva manera de definir las columnas hay que definir las veces que se repetira
+este patron */
 }
