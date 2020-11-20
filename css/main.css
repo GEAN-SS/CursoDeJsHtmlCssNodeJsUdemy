@@ -1,4 +1,4 @@
-/*Estamos en la seccion 13 y CSS GRID(area de grillas)*/
+/*Estamos en la seccion 13 y CSS GRID(grilla implicita)*/
 body {
   background-color: #eee;
 }
@@ -10,6 +10,19 @@ body {
                         "footer footer";
 grid-template-rows: 150px 1fr 100px;
 grid-template-columns: 1fr 200px;
+/*las grillas especificadas anteriormente son explicitas y lo que tengamos
+dentro de ellas cumpliran con ese formato establecido que en este caso son 3,
+pero las siguientes a estas (en este caso las que estan debajo del footer)
+seguiran un formato de grilla implicito,o sea, aseguira con siendo grid pero
+por defecto.
+ para eso usamos lo siguiente: */
+
+grid-auto-rows: 140px;
+/* agraga un tamaño de filas de 140px */
+grid-auto-flow: row;
+/* esto nos dice en que direccion va a fluir la grilla, si es row,
+sera de arriba a abajo y si es column, sera de izquierda a derecha */
+
 }
 
 .red {
