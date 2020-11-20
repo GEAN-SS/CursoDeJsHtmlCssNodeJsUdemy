@@ -1,25 +1,27 @@
-/*Estamos en la seccion 13 y CSS GRID(usando repeat para nombres de lineas predecibles)*/
+/*Estamos en la seccion 13 y CSS GRID(area de grillas)*/
 body {
   background-color: #eee;
 }
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(2,[row-inicio] 50px [row-final]);
-  grid-template-columns: repeat(3,[col-inicio] 1fr [col-final]);
-  /* con el repeat tu colocas el numearo de veces que se repite el nombre
-  que colocas al lado como lo es en este caso "[row-inicio] 50px" que se repetira 2 veces
-  y en el caso de "[col-inicio] 1fr" que se repetira 3 veces*/
-  grid-gap: 15px;
+  grid-template-areas: "header header"
+                        "content sidebar"
+                        "footer footer";
+grid-template-rows: 150px 1fr 100px;
+grid-template-columns: 1fr 200px;
 }
 
-.element {
+.red {
   background-color: red;
 }
-
+.blue{
+  background-color: blue;
+}
 .header {
   grid-column: col-inicio / col-final 3;
   grid-row: row-inicio / row-final 3;
-/* en esta nueva manera de definir las columnas hay que definir las veces que se repetira
-este patron */
+
 }
+/* esto nos ayuda a distribuir de mejor manera el espacio segun el contenido
+vaya creciendo, ya que la grilla se ira adaptando a esta */
