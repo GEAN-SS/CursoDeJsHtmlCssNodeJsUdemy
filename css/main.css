@@ -1,4 +1,4 @@
-/*Estamos en la seccion 13 y CSS GRID(alinea y justifica todos los elementos de una grilla)*/
+/*Estamos en la seccion 13 y CSS GRID(alinea y justifica un solo elemento de grilla)*/
 body {
   background-color: #eee;
 }
@@ -28,11 +28,17 @@ justify-items:stretch;/*esto para ajustar el espacio del grid y se usa en el eje
   end: todo el contenido queda despalazado hasta el final, se mueve lo mas abajo posible
  */
 }
-.red{
-  background-color: red;
-}
 .header {
   grid-column: col-inicio / col-final 3;
   grid-row: row-inicio / row-final 3;
 
+}
+.red{
+  background-color: red;
+}
+.item-1{
+  /* es basicamente lo mismo que en la clase pasada pero en este caso solo
+  se aplica en un solo elemento con esta clase */
+  justify-self:center;
+  align-self: center;
 }
