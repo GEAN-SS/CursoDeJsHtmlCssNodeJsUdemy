@@ -1,40 +1,38 @@
-/*Estamos en la seccion 13 y CSS GRID(grilla implicita)*/
+/*Estamos en la seccion 13 y CSS GRID(alinea y justifica todos los elementos de una grilla)*/
 body {
   background-color: #eee;
 }
 
 .grid {
+
   display: grid;
   grid-template-areas: "header header"
                         "content sidebar"
                         "footer footer";
 grid-template-rows: 150px 1fr 100px;
 grid-template-columns: 1fr 200px;
-/*las grillas especificadas anteriormente son explicitas y lo que tengamos
-dentro de ellas cumpliran con ese formato establecido que en este caso son 3,
-pero las siguientes a estas (en este caso las que estan debajo del footer)
-seguiran un formato de grilla implicito,o sea, aseguira con siendo grid pero
-por defecto.
- para eso usamos lo siguiente: */
-
 grid-auto-rows: 140px;
-/* agraga un tamaño de filas de 140px */
 grid-auto-flow: row;
-/* esto nos dice en que direccion va a fluir la grilla, si es row,
-sera de arriba a abajo y si es column, sera de izquierda a derecha */
-
+justify-items:stretch;/*esto para ajustar el espacio del grid y se usa en el eje horizontal*/
+/*
+  justify-items:
+  1- start: es el que viene por defecto.
+  2- center: los coloca al centro.
+  3- end: los coloca lo mas a la derecha posible.
+  4- stretch: los elementos usan todo el espacio posible;
+*/
+ align-items: stretch;;/*esto para ajustar el espacio del grid y se usa en el eje vertical*/
+/* start: manda todo para arriba.
+  center: centra el contenido.
+  stretch: usa todo el espacio que le corresponde.
+  end: todo el contenido queda despalazado hasta el final, se mueve lo mas abajo posible
+ */
 }
-
-.red {
+.red{
   background-color: red;
-}
-.blue{
-  background-color: blue;
 }
 .header {
   grid-column: col-inicio / col-final 3;
   grid-row: row-inicio / row-final 3;
 
 }
-/* esto nos ayuda a distribuir de mejor manera el espacio segun el contenido
-vaya creciendo, ya que la grilla se ira adaptando a esta */
