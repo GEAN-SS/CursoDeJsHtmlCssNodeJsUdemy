@@ -1,44 +1,24 @@
-/*Estamos en la seccion 13 y CSS GRID(alinea y justifica un solo elemento de grilla)*/
+/*Estamos en la seccion 13 y CSS GRID(Alineando la grilla completa)*/
+/*basicamente vemos como con la clase grilla movemos todos los recuadros
+y vemos como darles un espacio entre ellos*/
+html{
+  height: 100%;
+}
 body {
   background-color: #eee;
+  height: 100%;
 }
 
 .grid {
-
   display: grid;
-  grid-template-areas: "header header"
-                        "content sidebar"
-                        "footer footer";
-grid-template-rows: 150px 1fr 100px;
-grid-template-columns: 1fr 200px;
-grid-auto-rows: 140px;
-grid-auto-flow: row;
-justify-items:stretch;/*esto para ajustar el espacio del grid y se usa en el eje horizontal*/
-/*
-  justify-items:
-  1- start: es el que viene por defecto.
-  2- center: los coloca al centro.
-  3- end: los coloca lo mas a la derecha posible.
-  4- stretch: los elementos usan todo el espacio posible;
-*/
- align-items: stretch;;/*esto para ajustar el espacio del grid y se usa en el eje vertical*/
-/* start: manda todo para arriba.
-  center: centra el contenido.
-  stretch: usa todo el espacio que le corresponde.
-  end: todo el contenido queda despalazado hasta el final, se mueve lo mas abajo posible
- */
-}
-.header {
-  grid-column: col-inicio / col-final 3;
-  grid-row: row-inicio / row-final 3;
-
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: repeat(3, 75px);
+  grid-gap: 5px;
+  justify-content:space-evenly;
+  align-content: space-evenly;
 }
 .red{
   background-color: red;
-}
-.item-1{
-  /* es basicamente lo mismo que en la clase pasada pero en este caso solo
-  se aplica en un solo elemento con esta clase */
-  justify-self:center;
-  align-self: center;
 }
