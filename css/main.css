@@ -1,7 +1,4 @@
-/*Estamos en la seccion 14  FlexBox( manipular el orden de los elementos)*/
-body{
-  width: 200px;
-}
+/*Estamos en la seccion 14  (hacer que los elementos crezcan de manera dinamica)*/
 .flex{
   display: flex;
   flex-flow: row wrap;
@@ -14,23 +11,14 @@ body{
 }
 
 .primero{
-  order: -4;
+  flex-grow: 1;
 }
 .segundo{
-  order: -3;
+ flex-grow: 1;
 }
 .tercero{
-  order:1;
+  flex-grow: 2;
 }
-.cuarto{
-  order:1;
-}
-.quinto{
-  order:0;
-}
-.sexto{
-  order:0;
-}
-/* order les da un valor y segun este los posiciona, todos deben ser 0 para que se ordenen por orden de escritura ,
-pero si le damos 1,2,4 los pondra a la derecha ya que es mayor a 0 y si es -1,-2,-3  los pondra a la izquierda ya que
-por ser el menor. en resumen, mientras mayor sea mas a la derecha estara y mientras menor sea mas a la izquierda estara*/
+/* basicamente flex-grow hace que trabanjen las proporciones del maximo espacio posible,
+o sea, que en el caso de primero y segundo ocupan una unidad de este espacio, pero tercero ocupa dos unidades de este
+espacio disponible */
