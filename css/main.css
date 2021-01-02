@@ -14,11 +14,23 @@ body{
 }
 
 .primero{
-  order: 0;
+  order: -4;
 }
 .segundo{
-  order: 0;
+  order: -3;
+}
+.tercero{
+  order:1;
+}
+.cuarto{
+  order:1;
+}
+.quinto{
+  order:0;
+}
+.sexto{
+  order:0;
 }
 /* order les da un valor y segun este los posiciona, todos deben ser 0 para que se ordenen por orden de escritura ,
 pero si le damos 1,2,4 los pondra a la derecha ya que es mayor a 0 y si es -1,-2,-3  los pondra a la izquierda ya que
-por ser el menor. en resumen; el mas bajo va a la izquierda y el mayor a la derecha*/
+por ser el menor. en resumen, mientras mayor sea mas a la derecha estara y mientras menor sea mas a la izquierda estara*/
