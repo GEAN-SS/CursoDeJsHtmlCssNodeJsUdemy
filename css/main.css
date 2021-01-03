@@ -1,4 +1,4 @@
-/*Estamos en la seccion 14  (flex-basis y flex)*/
+/*Estamos en la seccion 14  (aling items)*/
 .flex{
   display: flex;
   flex-flow: row wrap;
@@ -10,22 +10,13 @@
   background-color: red;
 }
 .primero{
-  /* flex-grow: 1;
-  flex-basis: 20px;-> este le da un ancho inicial a nuestro elemento, despues
-  el resto del espacio disponible de va a distribuir con lo indicado en flex-grow
-
-   estas dos propiedades se puden usar en una sola liena usando la
-   propiedad flex, en donde primero va flex-grow y luego flex-basis
- */
-
  flex: 1 20px;
- /* flex no dfunciona si no le indicamos los dos numeros, si solo colocamos flex-grow no nos
- tomara en cuanta a flex  */
 }
 .segundo{
  flex-grow: 1;
+ align-self: flex-end;;/*este aling-self se encarga de aliear a los elementos en el eje
+ vertical*/
 }
 .tercero{
   flex-grow: 2;
 }
-/*   */
