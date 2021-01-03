@@ -1,4 +1,4 @@
-/*Estamos en la seccion 14  (hacer que los elementos crezcan de manera dinamica)*/
+/*Estamos en la seccion 14  (flex-basis y flex)*/
 .flex{
   display: flex;
   flex-flow: row wrap;
@@ -9,9 +9,18 @@
 .red{
   background-color: red;
 }
-
 .primero{
-  flex-grow: 1;
+  /* flex-grow: 1;
+  flex-basis: 20px;-> este le da un ancho inicial a nuestro elemento, despues
+  el resto del espacio disponible de va a distribuir con lo indicado en flex-grow
+
+   estas dos propiedades se puden usar en una sola liena usando la
+   propiedad flex, en donde primero va flex-grow y luego flex-basis
+ */
+
+ flex: 1 20px;
+ /* flex no dfunciona si no le indicamos los dos numeros, si solo colocamos flex-grow no nos
+ tomara en cuanta a flex  */
 }
 .segundo{
  flex-grow: 1;
@@ -19,6 +28,4 @@
 .tercero{
   flex-grow: 2;
 }
-/* basicamente flex-grow hace que trabanjen las proporciones del maximo espacio posible,
-o sea, que en el caso de primero y segundo ocupan una unidad de este espacio, pero tercero ocupa dos unidades de este
-espacio disponible */
+/*   */
