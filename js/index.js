@@ -1,19 +1,7 @@
-//seccion 15 JAVASCRIPT (Mas tipos de variables / Objetos / arreglos)
+//seccion 16 JAVASCRIPT (Operadores matematicos/ comparacion/ logicos)
 
 // la direccion de la carpeta es C:\Users\Gerardo Sarmiento\github\CursoDeJsHtmlCssNodeJsUdemy\js>
-console.log('Hola Mundo');
-//tipos de datos
-//String: cadena de caracteres. 'a' 'hola' 'hola mundo 34' "a" "hola" "hola mundo 34"
-//Boolean: solo da true o false.
-//Null: es nulo, la variable esta vacia.
-//Number: cualquier numero en JAVASCRIPT 1, 23, 234.
-//Undefined: una variable que no ha sido definida.
-//Object; un objeto.
-
-//definicion de variables
-//var: es algo que se define al inicio de las definiciones de avriables, pero no es aconsejable usarla ya que no es tan util como en otros lengiajes, hay que evitar de usarla lo mas posible
-//let : es una variables que vamos a poder definir y usarla mas adelante sin saber que valor contien esta
-//const: definimos variables de sólo lectura (no confundir con inmutables), esto quiere decir que, cuando asignamos una variable, el nombre de esta va estar asignada a un puntero en memoria, el cual no puede ser sobreescrito o reasignado.
+// console.log('Hola Mundo');
 
 
 //var miPrimeraVariable= 'lala'
@@ -24,7 +12,6 @@ let miPrimeraVariable= 'Mi Primera Variable!'
 //cambiamo el valor de la variable
 miPrimeraVariable= 'Esto ha cambiado'
 // console.log(miPrimeraVariable);
-//el cambiar el valor de una variables se conoce como Mutabilidad
 
 //boolean
 let miBoolean= true
@@ -42,37 +29,84 @@ let undef
 let nulo= null
 // console.log(nulo);
 
-//Objeto
-//es una agrupacion de datos y estos datos hacen sentido entre si
+
 
 //objeto vacio
 const miPrimerObjeto= {}
 
 //obajeto
-//los objetos no tienen variables, tienen propiedades
 const miObjeto= {
   unNumero:12,
   unString: 'Esta cadena de caracteres',
   unaCondicion: true,
 }
-// console.log(miObjeto);
-//en caso de que queramos escribir una propiedad y no un objeto completo, escribimos un punto seguido del nombre de la propiedad
-// console.log(miObjeto.unNumero);
+
 
 //Arreglo
-//Nota, una lista es un subconjunto de los arrays, ya que almacenan datos pero estos deben ser de un mismo tipos
-//asi que si los datos son iguales una lista, si son diferentes es un arreglo
 const arrVacio = []
 const arr= [1, 2, 'hola', 'mundo', miObjeto]
-// console.log(arrVacio);
 
-//push agraga un elemneto al arreglo
-// arr.push(5)
 
 arrVacio.push(1);
 arrVacio.push(2);
 arrVacio.push(3);
 arrVacio.push('hola');
-//No solo acepta valores primitivos, tambien acepta variables ya definidas
 arrVacio.push(miPrimeraVariable);
-console.log(arrVacio);
+// console.log(arrVacio);
+
+//Operadores matematicos
+const suma= 1+2
+const resta= 1-2
+const multiplicar= 1*2
+const division= 9/3
+
+// console.log(suma, resta, multiplicar, division);
+
+const modulo= 10%3 //nos deviuelve el valor que sobra de la division
+// console.log(modulo);
+
+let num= 5
+// num++
+// num--
+// num += 5
+// num -= 5
+//num *= 5
+//num /=5
+//console.log(num);
+
+
+//Operadores de comparacion
+
+//igualdad estricta
+const resultado1= 5 === num // evalua si el numero es exactamente igual al otro.
+//igualdad no estricta, strings pueden ser iguales a numero si el valor es el mismo.
+const resultado2= 5 == '5' // esto resulta true a pesar de ser un string, no toma en cuenta en el tipo de dato.
+
+const resultado3= 5 < 6
+const resultado4= 5 < 5
+const resultado5= 5 > 6
+const resultado6= 5 > 5
+
+const resultado7= 5 <= 6
+const resultado8= 5 <= 5
+const resultado9= 5 >= 6
+const resultado10= 5 >= 5
+
+const resultado11= 5 !== 6 //estrictamente desigual
+const resultado12= 5 != '5' // no estrictamente desigual
+// console.log(resultado2);
+
+//operadores logicos
+
+//or = ||, and &&, not !
+
+//Or
+// un resultado true pueden ser strings, numeros y objetos son evaluados como true, a excepcion de 0.
+const resultadoOr= false || true // es igual a true / tomara al primer elemento que considere verdadero / siempre que haya un true retornara verdadero, si no hay true retornara false.
+
+
+// And
+const resultadoAnd= false && true // retorna false / siempre y cuando haya un resultado false, va a retornar false/ solo retorna true cuando todos los valores son true.
+
+// Not
+const resultadoNot= !true // retorna false / retorna el opuesto del valor.
