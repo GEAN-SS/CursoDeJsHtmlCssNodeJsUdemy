@@ -1,4 +1,5 @@
+// seccion 19 y DOM (agregando elementos html a otro elemento html )
 window.onload= () => {
   const parrafo=document.getElementById('text')
-  parrafo.innerText = 'Texto actualizado' //podemos manipular/cambiar el texto dentro del html (no el html, el texto que este contiene si)
-}
+  parrafo.innerHTML = '<li>elemento 1</li><li>elemento 2</li>'
+}       //cambiamos el innerText por innerHTML
