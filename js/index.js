@@ -1,7 +1,7 @@
-//seccion 17 JAVASCRIPT (Control de flujo: if/while/switch/for/ accediendo a los elementos de un arreglo)
+//seccion 18 JAVASCRIPT (funciones)
 
 
-//direccion de la carpeta es C:\Users\Gerardo Sarmiento\github\CursoDeJsHtmlCssNodeJsUdemy\js>
+//direccion de la carpeta es C:\Users\Gerardo Sarmiento\github\CursoDeJsHtmlCssNodeJsUdemy\js
 // console.log('Hola Mundo');
 
 
@@ -56,14 +56,14 @@ arrVacio.push(miPrimeraVariable);
 // console.log(arrVacio);
 
 //Operadores matematicos
-const suma = 1 + 2
-const resta = 1 - 2
-const multiplicar = 1 * 2
-const division = 9 / 3
+// const suma = 1 + 2
+// const resta = 1 - 2
+// const multiplicar = 1 * 2
+// const division = 9 / 3
 
 // console.log(suma, resta, multiplicar, division);
 
-const modulo = 10 % 3 //nos deviuelve el valor que sobra de la division
+//const modulo = 10 % 3 //nos deviuelve el valor que sobra de la division
 // console.log(modulo);
 
 let num = 5
@@ -160,9 +160,66 @@ const resultadoNot = !true // retorna false / retorna el opuesto del valor.
 // }
 
 //Accediendo a los elementos de un arreglo
-const numeros=[1,2,'hola',4,5]
-//console.log(numeros[0]);
+// const numeros=[1,2,'hola',4,5]
+// //console.log(numeros[0]);
+//
+// for (let i = 0; i < numeros.length; i++) {
+//   console.log(numeros[i]);
+// }
 
-for (let i = 0; i < numeros.length; i++) {
-  console.log(numeros[i]);
+//Funciones
+
+// function iterar(arg1) {//el recive un argumento
+//
+//   for (let i = 0; i < arg1.length; i++) {
+//     console.log(arg1[i]);
+//   }
+// }
+
+// const numeros=[1,2,'hola',4,5]
+// const nombres=['pedro','juan','felipe','maria','michel']
+// iterar(numeros);//lo que enviamos es un parametro
+// iterar(nombres);
+
+// function suma(a,b){
+//   return a+b;
+// }
+//
+// let resultadoSuma1 = suma(1,2)
+// let resultadoSuma2 = suma(5,6)
+// let resultadoSuma3 = suma(resultadoSuma1,resultadoSuma2)
+// console.log('Resultado=', resultadoSuma3);
+
+//uso de callback en una funcion
+function sumar(a,b,cb){
+  const r= a+b
+  cb(r)
 }
+function callback(result){
+  console.log('Resultado=', result);
+}
+
+//usar funciones como valores
+
+// callback(6)
+
+//sumar(2,3,callback )
+
+//fat arrrow function
+
+const miFatArrowFunction= (a,b) => a + b
+
+const otraFAF= (a,b ) => {
+  return a+b
+}
+const r = otraFAF(3,4)
+// console.log(r);
+
+//funciones anonimas
+//anonima es que no tiene nombre
+
+sumar(2,3, function(r){
+  console.log('Soy una funcion anonima y mi resulatado es ',r);
+})
+
+// fin de la seccion 18
