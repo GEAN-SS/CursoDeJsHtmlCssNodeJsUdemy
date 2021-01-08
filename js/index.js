@@ -1,7 +1,8 @@
-//seccion 18 JAVASCRIPT (funciones)
+//seccion 19 JAVASCRIPT (Intro a DOM)
+
+//github\CursoDeJsHtmlCssNodeJsUdemy\js
 
 
-//direccion de la carpeta es C:\Users\Gerardo Sarmiento\github\CursoDeJsHtmlCssNodeJsUdemy\js
 // console.log('Hola Mundo');
 
 
