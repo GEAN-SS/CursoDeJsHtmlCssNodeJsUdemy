@@ -1,4 +1,6 @@
 // seccion 19 y DOM
+
+
 const todos= JSON.parse(localStorage.getItem('todos')) || [];
 
 const render =() => {
